@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Китти-клуб</title>
+</head>
+<body>
+    <header  > 
+        <span class="logo">Китти-клуб
+            <img src="img/40355962_60x60.gif" alt="img"/>
+        </span>
+        <nav class="menu">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="price.html">Услуги</a></li>
+              <li><a href="kitty.html">Китти-котики</a></li>
+              <li><a href="event.html">Мероприятия</a></li>
+            </ul>
+          </nav>
+
+
+    </header>
+
+    <div class="info">
+        <h1> В этом разделе вы можете познакомиться с китти-жителями нашего котокафе!</h1>
+        <img src="img/3589.gif" alt="img"/>
+    </div>
+
+
+
+    <div class="b-container">
+      <div class="button-container">
+          <button id="openFormButton">Заявка на киттика</button>
+      </div>
+    </div>
+  
+    <div id="overlay" class="overlay">
+        <div class="form-popup">
+            <button id="closeFormButton" class="close-button">×</button>
+            
+            <form id="form" class="form">
+                <h3 class="form-title">Заявка на киттика</h3>
+                
+                <label for="email">Электронная почта*</label>
+                <input type="email" id="email" name="email" required>
+                <div id="email-error" class="error-message"></div>
+                
+                <label for="phone">Номер телефона*</label>
+                <input type="tel" id="phone" name="phone">
+                <div id="phone-error" class="error-message"></div>
+                
+                <label for="name">Имя*</label>
+                <input type="text" id="name" name="name">
+                <div id="name-error" class="error-message"></div>
+                
+                <label for="pets">Есть ли у вас животные?</label>
+                <select id="pets" name="pets">
+                    <option value="yes">Да</option>
+                    <option value="no">Нет</option>
+                </select>
+                
+                <label for="allergy">Есть ли у вас аллергия на шерсть?</label>
+                <select id="allergy" name="allergy">
+                    <option value="yes">Да</option>
+                    <option value="no">Нет</option>
+                </select>
+                
+                <label for="housing">Есть ли у вас собственное жилье?</label>
+                <select id="housing" name="housing">
+                    <option value="yes">Да</option>
+                    <option value="no">Нет</option>
+                </select>
+                
+                <label for="comment">Комментарий</label>
+                <textarea id="comment" name="comment"></textarea>
+                
+                <label for="catName">Имя котика</label>
+                <select id="catName" name="catName">
+                    <option value="Денвер">Денвер</option>
+                    <option value="Ксюта">Ксюта</option>
+                    <option value="Офелия">Офелия</option>
+                    
+                </select>
+                
+                <button type="submit" id="submitButton">Отправить</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <div class="card-container">
+        <div class="card">
+          <img src="img/денвер.jpg" alt="img">
+          <div class="card-content">
+            <h3>Денвер</h3>
+            <p>Милейший мальчик с треугольной мордочкой.
+                Денвер очень пугливый котик, но довольно часто выходит в зал. Любит вкусняшки и общение с другими котиками.
+                Ему около четырёх лет.
+                Котик любопытный и хитрый.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/ксюта.jpg" alt="img">
+          <div class="card-content">
+            <h3>Ксюта</h3>
+            <p>Ксюта не так уж и редко выходит из укрытия, поэтому временами ее можно увидеть в котейне.
+                Кошечка спокойно общается с другими котиками, предпочитает спокойно поспать в мягкой лежанке, с перерывами на игры с удочкой.
+                Она умиляет и завораживает.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/офелия.jpg" alt="img">
+          <div class="card-content">
+            <h3>Офелия</h3>
+            <p>Офелия очень добрая, спокойная и красивая кошечка, но увидеть ее можно очень редко, кошка боится выходить в людные дни и в шумное пространство, поэтому предпочитает прятаться в нашем месте для отдыха кошечек, куда вход посетителям закрыт.</p>
+          </div>
+        </div>
+      </div>
+      
+
+
+    <footer>
+        <div class="footer-container">
+            <h>По вопросам сотрудничества:  meow@yandex.ru</h>           
+            <p class="footer-copyright">© 2024 Китти-клуб.</p>
+        </div>
+    </footer>
+
+<script src="button.js"></script>  
+<script src="form-validation.js"></script>   
+</body>
+</html>
